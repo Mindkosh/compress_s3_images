@@ -1,4 +1,4 @@
-This project helps you compress a large number of images in parallel using AWS Batch. The best way to get started is follow
+This project helps you compress a large number of images in parallel using AWS Batch. The best way to get started is to follow
 [this guide on Youtube](https://youtu.be/PhuV42va7Gs)
 
 It combines the following key components
