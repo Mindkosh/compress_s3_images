@@ -1,0 +1,14 @@
+{
+    "batch_1": [
+        "s3://<bucket-name>/location",
+        "s3://<bucket-name>/location"
+    ],
+    "batch_2": [
+        "s3://<bucket-name>/location",
+        "s3://<bucket-name>/location"
+    ],
+    "batch_3": [
+        "s3://<bucket-name>/location",
+        "s3://<bucket-name>/location"
+    ]
+}
