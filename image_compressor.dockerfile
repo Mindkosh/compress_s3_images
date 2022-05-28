@@ -1,6 +1,6 @@
 FROM mindkosh/minimal_pillow:latest
 
-ADD python/compress_images.py /
+ADD python/rotate_and_save.py /
 ADD python/utils.py /
 
-ENTRYPOINT ["python", "./compress_images.py"]
+ENTRYPOINT ["python", "./rotate_and_save.py"]

@@ -11,15 +11,17 @@ def main():
 
     parser.add_argument("--file_list", required=True, action='store')
     parser.add_argument("--batches", required=True, action='store')
+    parser.add_argument("--s3_prefix", required=False, action='store')
     parser.add_argument("--outfile", required=False, action='store')
     args = parser.parse_args()
     
     file_list = args.file_list
     batches = int(args.batches)
     outfile = args.outfile
+    s3_prefix = args.s3_prefix
 
     all_lines = open(file_list).readlines()
-    all_data = [ i.strip().split(" ")[-1].strip() for i in all_lines ]
+    all_data = [ os.path.join( s3_prefix, i.strip().split(" ")[-1].strip() ) for i in all_lines ]
     
     print("Segmenting " + str(len(all_data)) + " images into " + str(batches) + " batches.")
 

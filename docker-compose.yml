@@ -3,18 +3,18 @@ version: '3.3'
 services:
   compress_images:
     container_name: compress_images_container
-    image: mindkosh/image_compressor
+    image: mindkosh/image_compressor:rotate
     
     build:
       context: .
-      
+      dockerfile: image_compressor.dockerfile
+
     environment:
       BATCH_JOB_KEY: "batch_1"
-      AWS_REGION: ""
-      IN_BUCKET: ""
-      JSON_LOCATION: ""
-      OUT_BUCKET: ""
-      OUT_KEY: ""
-      AWS_ACCESS_KEY_ID: ""
-      AWS_SECRET_ACCESS_KEY: ""
-      DIVIDE_CAMERA_WISE: ""
+      AWS_REGION: "us-east-2"
+      IN_BUCKET: "mindkosh-backend-test"
+      JSON_LOCATION: "aws_batch_test/config/tt.json"
+      OUT_BUCKET: "mindkosh-backend-test"
+      OUT_KEY: "aws_batch_test/out_images/new/"
+      AWS_ACCESS_KEY_ID: "AKIATTAUJC2ALEVZTUAH"
+      AWS_SECRET_ACCESS_KEY: "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"
