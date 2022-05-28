@@ -16,5 +16,5 @@ services:
       JSON_LOCATION: "aws_batch_test/config/tt.json"
       OUT_BUCKET: "mindkosh-backend-test"
       OUT_KEY: "aws_batch_test/out_images/new/"
-      AWS_ACCESS_KEY_ID: "AKIATTAUJC2ALEVZTUAH"
-      AWS_SECRET_ACCESS_KEY: "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"
+      AWS_ACCESS_KEY_ID: ""
+      AWS_SECRET_ACCESS_KEY: ""

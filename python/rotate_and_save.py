@@ -20,18 +20,6 @@ out_key = os.getenv( "OUT_KEY", None )
 aws_key = os.getenv( "AWS_ACCESS_KEY_ID", None )
 aws_secret_key = os.getenv( "AWS_SECRET_ACCESS_KEY", None )
 
-# batch_job_key = "batch_1"
-# runtime_region = os.getenv( "AWS_REGION", "us-east-2" )
-
-# bucket = "mindkosh-backend-test"
-# json_key = "aws_batch_test/config/tt.json"
-
-# out_bucket = "mindkosh-backend-test"
-# out_key = "aws_batch_test/out_images/new/"
-
-# aws_key = "AKIATTAUJC2ALEVZTUAH"
-# aws_secret_key = "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"
-
 # If filenames end with _left, _right or _front, this will save the compressed 
 # files in their respective directories
 
